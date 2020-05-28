@@ -112,16 +112,16 @@ ul{
 	font-size: 15px;
 }
 #futureButton:hover{
-	background-image: url(../1999FutureBox/imgs/background.png)
+	background-image: url(1999FutureBox/imgs/background.png)
 }
 #soggyButton:hover{
-	background-image: url(../Soggy/imgs/Hintergrund\ Mauer\ 900px.png)
+	background-image: url(Soggy/imgs/Hintergrund\ Mauer\ 900px.png)
 }
 #TNKbutton:hover{
-	background-image: url(../TomorrowNeverKnows/imgs/TNK_background.jpg)
+	background-image: url(TomorrowNeverKnows/imgs/TNK_background.jpg)
 }
 #aetherButton:hover{
-	background-image: url(../Aether/imgs/grungeBig.png)
+	background-image: url(Aether/imgs/grungeBig.png)
 }
 
 .test_collapse{
