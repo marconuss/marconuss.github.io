@@ -1,0 +1,117 @@
+html{
+	margin:0;
+	padding:0;
+}
+body::-webkit-scrollbar {
+	width: .7em;
+}
+   
+body::-webkit-scrollbar-track {
+	background-color: rgb(151, 129, 151);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: rgb(56, 18, 56);
+}
+
+body{
+	margin:0;
+	padding:0;
+	color: rgb(200, 200, 200);
+	font-family: 'Open Sans', sans-serif;
+	background-color:rgb(0, 29, 46);
+}
+
+div{
+	display: block;
+	margin: 0 auto;
+}
+
+img{
+	vertical-align: middle;
+}
+h1{
+	text-transform: uppercase;
+}
+#title{
+	width: 100%;
+	height: 100%;
+	background-position-x: center;
+	background-position-y: top;
+	background-size: cover;
+	background-attachment: initial;
+	background-image: url("imgs/background.png");
+}
+.description{
+	margin: 0 auto;
+	width: 900px;
+	min-width: 600px;
+}
+#info1{
+	padding-top: 30px;
+	background-position-x: center;
+	background-position-y: top;
+	background-size: cover;
+	background-attachment: initial;
+	padding-bottom: 30px;
+	background-image: url("imgs/background_4.png")
+}
+#info2{
+	padding-top: 30px;
+	background-image: url("https://drive.google.com/uc?export=view&id=15pfu5-vrYpPmzmJF9uolA-vjcpzC6RhP");
+	background-position-x: center;
+	background-position-y: top;
+	background-size: cover;
+	background-attachment: initial;
+	background-color: rgb(51, 51, 51);
+}
+#info3{
+	padding-top: 30px;
+	background-image: url("imgs/background.png");
+	background-position-x: center;
+	background-position-y: top;
+	background-size: cover;
+	background-attachment: initial;
+	background-color: rgb(51, 51, 51);
+	padding-bottom: 30px;
+}
+.titles{
+	text-transform: uppercase;
+	padding: 10px;
+	font-family:'Press Start 2P', cursive;
+}
+.box{
+	background-color: rgba(56, 18, 56, 0.5);
+	border:5px solid rgb(56, 0, 94);
+	box-shadow: 20px 20px 20px rgb(153, 0, 255, 0.7),
+				-20px -20px 20px rgba(82, 1, 136, 0.25),
+				-20px 20px 20px rgba(82, 1, 136, 0.25),
+				20px -20px 20px rgba(82, 1, 136, 0.25),
+}
+
+hr {
+  border: 0;
+  border-top: 3px double #000000;
+}
+.content{
+	padding: 10px;
+}
+.characters{
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+}
+#image_section{
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+.tile_img{
+	text-align: center;
+    width: 70%;
+}
+.logos{
+	text-align: center;
+    width: 90%;
+}
+ul{
+	list-style: none;
+}
