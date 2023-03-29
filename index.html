@@ -25,12 +25,14 @@
         <div class="box" style="min-height: 180px;">
             <p class="titles">About me</p>
             <p class="content">
-                I'm a game developer currently enrolled in the Digital Games Master Program at the Cologne Game Lab.<br>
-                I grew up in Milan, Italy and moved to Germany for my studies, to learn programming, but also to
-                meet new people and find new perpectives. <br>
-                I like to combine programming and technology with high quality artwork and storytelling, therefore I
-                love creating videogames, the
-                best way to express all my interest.
+                Welcome to my portfolio! I'm Marco Cristoforetti, a passionate game developer currently pursuing my Digital Games Master's degree at the Cologne Game Lab and working as a porting
+                developer at Massive Miniteam.
+                <br>
+                I grew up in Milan, Italy and moved to Germany for my studies, to learn programming, but also to meet new people and find new perpectives. 
+                <br>
+                My love for games is driven by my desire to unite technology and great art to make immersive storytelling experiences.
+                <br>
+                Please feel free to explore my portfolio and see my latest projects. Thank you for stopping by!
             </p>
         </div>
     </div>
@@ -78,17 +80,26 @@
     <div class="description" style="padding-top: 50px;">
         <div class="box">
             <p class="titles">CV</p>
+            <p class="titles">Work Experience</p>
+            <p class="content">
+                2021/present - Porting developer - Student Job - Massive Miniteam, Cologne
+                <br>
+                2020/2021 	 - Porting developer - Internship - Slow Bros., Cologne
+                <br>
+                2017/2018 	 - Apple Specialist - Student Job - Apple Rosentrasse, Munich
+            </p>
             <p class="titles">Education</p>
             <p class="content">
-                2009/2015 - High school leving qualification in Scientific studies at Liceo Scientifico A.Volta, Milan,
-                Italy<br>
-                2018/present - Digital Games Bachelor with focus on Games Programming at Cologne Game Lab, TH-Koeln,
+                2022/Present - Digital Games Master with focus on Game Programming and Game Arts at Cologne Game Lab, TH-Koeln,
+                Cologne, Germany
+                <br>
+                2018/2022 - Digital Games Bachelor with focus on Game Programming at Cologne Game Lab, TH-Koeln,
                 Cologne, Germany
             </p>
             <p class="titles">Software</p>
             <p class="titles">Engines</p>
             <p class="content">
-                Unreal Engine, Unity, Godot, CryEngine
+                Unreal Engine, Unity, Godot
             </p>
             <p class="titles">Programming</p>
             <p class="content">
@@ -96,7 +107,7 @@
             </p>
             <p class="titles">Others</p>
             <p class="content">
-                Photoshop, MS Office, Git, Plastic, Motion Builder, Motive, Maya, Arduino IDE, VSCode
+                Photoshop, MS Office, Git, Plastic, Blender, Arduino IDE, Rider, MS Visual Studio
             </p>
         </div>
     </div>
@@ -133,16 +144,26 @@
 </section>
 
 <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
+    const coll = document.getElementsByClassName("collapsible");
 
-    for (i = 0; i < coll.length; i++) {
+    for (let i = 0; i < coll.length; i++) {
         coll[i].addEventListener("click", function () {
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight) {
+            const content = this.nextElementSibling;
+            
+            if(content.style.maxHeight) {
                 content.style.maxHeight = null;
             } else {
+                const allCollapsible = document.getElementsByClassName("collapsible");
+                for (let j = 0; j < allCollapsible.length; j++) {
+                    const otherContent = allCollapsible[j].nextElementSibling;
+                    if (otherContent !== content) {
+                        otherContent.style.maxHeight = null;
+                    }
+                }
                 content.style.maxHeight = content.scrollHeight + "px";
+                // Scroll to the top of the clicked element
+                content.scrollIntoView({behavior: "smooth"});
+                document.documentElement.scrollTop = this.offsetTop;
             }
         });
     }
