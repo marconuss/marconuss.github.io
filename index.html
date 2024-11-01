@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 
 <head>
+    <meta charset="UTF-8">
     <meta name="description" content="personal portfolio of Marco Cristoforetti">
     <meta name="author" content="Maro Cristoforetti">
 
@@ -10,87 +11,178 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" href="https://drive.google.com/uc?export=view&id=1JI9V9onUenThrgWXlNF1fRerbiOlcdsd">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Press+Start+2P|Roboto+Condensed" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </head>
 <body>
 <div id="title">
-    <div style="padding: 70px;text-align: center; font-family: 'Press Start 2P', cursive;">
+    <div style="padding: 70px;text-align: center; font-family: 'Press Start 2P', cursive; color: rgb(200, 200, 200);">
         <h1>Marco Cristoforetti</h1>
-        <!-- <img src="https://drive.google.com/uc?export=view&id=1wn77xG33628LgomelZXRm00WNbRFAFd_" class="side_img" > -->
-        <!-- <img src="https://drive.google.com/uc?export=view&id=1CMRYDUywhH3UfK2AwzFu04f4sIzPc56V" id="main_img" style="box-shadow: 5px 5px 10px #000000, -5px -5px 10px #000000;"> -->
     </div>
-    <!-- 	<img src="https://drive.google.com/uc?export=view&id=1wn77xG33628LgomelZXRm00WNbRFAFd_" class="side_img" > -->
 </div>
-<section id="info1">
-    <div class="description" style="padding-bottom: 50px;">
-        <div class="box" style="min-height: 180px;">
-            <p class="titles">About me</p>
+<section id="about">
+    <div class="description">
+        <div class="box">
+            <h5 class="titles">About me</h5>
             <p class="content">
-                Welcome to my portfolio! I'm Marco Cristoforetti, a passionate game developer currently pursuing my Digital Games Master's degree at the Cologne Game Lab and working as a porting
-                developer at Massive Miniteam.
-                <br>
-                I grew up in Milan, Italy and moved to Germany for my studies, to learn programming, but also to meet new people and find new perpectives. 
-                <br>
-                My love for games is driven by my desire to unite technology and great art to make immersive storytelling experiences.
-                <br>
-                Please feel free to explore my portfolio and see my latest projects. Thank you for stopping by!
+                Welcome to my Portfolio!<br>
+                I’m a dedicated game developer with a double Master’s degree in Digital Games from the Cologne Game Lab and the Cnam ENJMIN of Angoulême, specializing in game programming.<br>
+                Currently, I’m a software engineer at Massive Miniteam in Cologne, where I’ve gained hands-on experience in console porting for PlayStation and Xbox on a range of published titles.<br><br>
+                My passion for making videogames lies in merging technology with art to make immersive and magical experiences. But I’m also curious about exploring other engineering and creative fields, from web and app development to animation and design.<br>
+                Originally from Milan, Italy, I moved to Germany for my studies, to learn games programming, but also to connect with diverse creative minds, and find new perspectives.<br><br>
+                If you are interested in what I do, feel free to connect with me on LinkedIn!
             </p>
         </div>
     </div>
 </section>
-<section style="background-color: rgb(36, 36, 36);">
-    <button type="button" class="collapsible" id="soggyButton">
-        <p class="titles" style="margin: 0 auto; width: 900px; min-width: 600px;">Soggy: Inferno of the Cockroaches</p>
-    </button>
-    <div class="test_collapse">
-        <object data="Soggy/index.html" width=100% height=900px>
-            <embed src="Soggy/index.html" width=100% height=auto></embed>
-            Error: Embedded data could not be displayed.
-        </object>
+
+<section id="work">
+    <div class="description" style="padding-top:10px; padding-bottom:10px">
+        <h5 class="titles">GAMES I WORKED ON</h5>
     </div>
-    <button type="button" class="collapsible" id="aetherButton">
-        <p class="titles" style="margin: 0 auto; width: 900px; min-width: 600px;">Aether</p>
-    </button>
-    <div class="test_collapse">
-        <object data="Aether/index.html" width=100% height=900px>
-            <embed src="Aether/index.html" width=100% height=auto></embed>
-            Error: Embedded data could not be displayed.
-        </object>
-    </div>
-    <button type="button" class="collapsible" id="TNKbutton">
-        <p class="titles" style="margin: 0 auto; width: 900px; min-width: 600px;">Tomorrow Never Knows</p>
-    </button>
-    <div class="test_collapse">
-        <object data="TomorrowNeverKnows/index.html" width=100% height=900px>
-            <embed src="TomorrowNeverKnows/index.html" width=100% height=auto></embed>
-            Error: Embedded data could not be displayed.
-        </object>
-    </div>
-    <button type="button" class="collapsible" id="futureButton">
-        <p class="titles" style="margin: 0 auto; width: 900px; min-width: 600px;">1999 Future Box</p>
-    </button>
-    <div class="test_collapse">
-        <object data="1999FutureBox/index.html" width=100% height=900px>
-            <embed src="1999FutureBox/index.html" width=100% height=100%></embed>
-            Error: Embedded data could not be displayed.
-        </object>
+    <div class="row row-cols-1 row-cols-md-3 row-cols-xl-5 g-3 px-3">
+        <div class="col">
+            <div class="card h-100 border-0">
+                <a href class="card-block stretched-link" >
+                    <img src="HaroldHalibut/imgs/SlowBros_HaroldHalibut_Keyart_1x1.png" class="card-img-top rounded" alt="...">
+                </a>
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Harold Halibut</h5>
+                    <p class="card-text">Optimization for PlayStation 4 and Xbox One</p>
+                    <p class="card-text"><small>2020 - 2021</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 border-0">
+                <a href class="card-block stretched-link" >
+                    <img src="ChickenPolice/imgs/ChickenPolice_KeyArt_1000x1000.png" class="card-img-top rounded" alt="..." >
+                </a>
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Chicken Police: Paint it Red!</h5>
+                    <p class="card-text">Porting on PlayStation 5 and implementation of DualSense haptics</p>
+                    <p class="card-text"><small>2021 - 2022</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 border-0">
+                <a href class="card-block stretched-link" >
+                    <img src="Scarf/Scarf_KeyArt_square.png" class="card-img-top rounded" alt="...">
+                </a>
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Scarf</h5>
+                    <p class="card-text">Porting for Google Stadia, PlayStation 4 and PlayStation 5, Xbox One and Xbox Series S/X.</p>
+                    <p class="card-text"><small>2022 - 2023</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 border-0">
+                <a href class="card-block stretched-link" >
+                    <img src="PERISH/imgs/PERISH_Banner_Square.jpg" class="card-img-top rounded" alt="...">
+                </a>
+                <div class="card-img-overlay">
+                    <h5 class="card-title">PERISH</h5>
+                    <p class="card-text">Porting for PlayStation 4, PlayStation 5, Xbox One and Xbox Series S/X</p>
+                    <p class="card-text"><small>2023</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 border-0">
+                <a href class="card-block stretched-link" >
+                    <img src="Oddsparks/imgs/Oddsparks_Banner_Vertical_Small.png" class="card-img-top rounded" alt="...">
+                </a>
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Oddsparks: An Automation Adventure</h5>
+                    <p class="card-text">Bringing the Demo to PlayStation 5 and Xbox Series S/X, and implementation of DualSense haptics</p>
+                    <p class="card-text"><small>2024</small></p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
-<section id="info3">
-    <div class="description" style="padding-top: 50px;">
+<div style="height: 100px"></div>
+
+<section id="student-projects">
+    <div class="description" style="padding-top:10px; padding-bottom:10px">
+        <h5 class="titles">STUDENT PROJECTS</h5>
+    </div>
+    <div class="row row-cols-1 row-cols-md-4 px-3">
+        <div class="col-xl-2">
+            <div class="card h-100 border-0">
+                <a href class="card-block stretched-link" >
+                    <img src="Aether/imgs/banner_square.jpg" class="card-img-top rounded" alt="...">
+                </a>
+                <div class="card-img-overlay">
+                    <h5 class="card-title">AETHER</h5>
+                    <p class="card-text">Programmer and Project Manager</p>
+                    <p class="card-text"><small>2018</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-2">
+            <div class="card h-100 border-0">
+                <a href class="card-block stretched-link" >
+                    <img src="TomorrowNeverKnows/imgs/TNK_banner_square.png" class="card-img-top rounded" alt="...">
+                </a>
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Tomorrow Never Knows</h5>
+                    <p class="card-text">Programmer</p>
+                    <p class="card-text"><small>2019</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-2">
+            <div class="card h-100 border-0">
+                <a href class="card-block stretched-link" >
+                    <img src="1999FutureBox/imgs/banner_square.png" class="card-img-top rounded" alt="...">
+                </a>
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Future Box 1999</h5>
+                    <p class="card-text">Programmer</p>
+                    <p class="card-text"><small>2019-2020</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-2">
+            <div class="card h-100 border-0">
+                <a href class="card-block stretched-link" >
+                    <img src="SuburbiaElectronica/Suburbia_banner_square.png" class="card-img-top rounded" alt="...">
+                </a>
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Suburbia Electronica</h5>
+                    <p class="card-text">Systems and UI Programmer</p>
+                    <p class="card-text"><small>2023-2024</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="cv">
+    <div class="description">
         <div class="box">
             <p class="titles">CV</p>
             <p class="titles">Work Experience</p>
             <p class="content">
-                2021/present - Porting developer - Student Job - Massive Miniteam, Cologne
+                2021/present - Associate Software Engineer - Massive Miniteam, Cologne
                 <br>
                 2020/2021 	 - Porting developer - Internship - Slow Bros., Cologne
                 <br>
-                2017/2018 	 - Apple Specialist - Student Job - Apple Rosentrasse, Munich
+                2017/2018 	 - Apple Specialist - Student Job - Apple Rosenstrasse, Munich
             </p>
             <p class="titles">Education</p>
             <p class="content">
-                2022/Present - Digital Games Master with focus on Game Programming and Game Arts at Cologne Game Lab, TH-Koeln,
+                2022/2024 - Double Degree Program at Cologne Game Lab and Cnam-ENJMIN
+                <br>
+                <span>&bullet; </span>Video Games & Interactive Media with focus on Game Programming at ENJMIN, Cnam, Angouleme, France
+                <br>
+                <span>&bullet; </span>Digital Games Master with focus on Game Programming and Game Arts at Cologne Game Lab, TH-Koeln,
                 Cologne, Germany
                 <br>
                 2018/2022 - Digital Games Bachelor with focus on Game Programming at Cologne Game Lab, TH-Koeln,
@@ -119,7 +211,7 @@
             <p>
                 This is the Portfolio of Marco Cristoforetti
             </p>
-            <p> March 2023</p>
+            <p id="current-date"> </p>
         </div>
         <hr>
         <div style="float: left; font-size: 11px;padding-bottom: 50px;">
@@ -133,41 +225,21 @@
             <p>
                 <a href="https://github.com/marconuss"
                    style="color: rgb(200, 200, 200); text-decoration: none;">GitHub</a>
+                -
+                <a href="https://www.linkedin.com/in/marco-cristoforetti-793231290/"
+                     style="color: rgb(200, 200, 200); text-decoration: none;">LinkedIn</a>
             </p>
         </div>
         <div style="float: right; font-size: 11px;">
             <p>+49 1522 2443800</p>
-            <p>Kalk-Muelheimer Strasse 386</p>
-            <p>51065, Cologne</p>
+            <p>Graditzer Str. 3</p>
+            <p>50735, Cologne</p>
         </div>
     </div>
 </section>
 
 <script>
-    const coll = document.getElementsByClassName("collapsible");
-
-    for (let i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-            const content = this.nextElementSibling;
-            
-            if(content.style.maxHeight) {
-                content.style.maxHeight = null;
-            } else {
-                const allCollapsible = document.getElementsByClassName("collapsible");
-                for (let j = 0; j < allCollapsible.length; j++) {
-                    const otherContent = allCollapsible[j].nextElementSibling;
-                    if (otherContent !== content) {
-                        otherContent.style.maxHeight = null;
-                    }
-                }
-                content.style.maxHeight = content.scrollHeight + "px";
-                // Scroll to the top of the clicked element
-                content.scrollIntoView({behavior: "smooth"});
-                document.documentElement.scrollTop = this.offsetTop;
-            }
-        });
-    }
+    document.getElementById('current-date').textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long' });
 </script>
-
 </body>
 </html>
