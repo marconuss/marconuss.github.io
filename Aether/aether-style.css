@@ -18,7 +18,8 @@ body{
 	padding:0;
 	color: rgb(200, 200, 200);
 	font-family: 'Open Sans', sans-serif;
-	background-color: rgb(51, 51, 51);
+	background: linear-gradient(to bottom, #191919, #333333);
+	overflow-x: hidden;
 }
 
 div{
@@ -78,15 +79,6 @@ hr {
 	background-color: rgb(51, 51, 51);
 	padding-bottom: 30px;
 }
-#info2{
-	padding-top: 30px;
-	background-image: url("https://drive.google.com/uc?export=view&id=15pfu5-vrYpPmzmJF9uolA-vjcpzC6RhP");
-	background-position-x: center;
-	background-position-y: top;
-	background-size: cover;
-	background-attachment: initial;
-	background-color: rgb(51, 51, 51);
-}
 #info3{
 	padding-top: 30px;
 	background-image: url("imgs/grungeBig.png");
@@ -96,6 +88,9 @@ hr {
 	background-attachment: initial;
 	background-color: rgb(51, 51, 51);
 	padding-bottom: 30px;
+}
+#info-section{
+	color:rgb(200, 200, 200);
 }
 .titles{
 	text-transform: uppercase;
@@ -122,7 +117,6 @@ hr {
 	text-transform: uppercase;
 }
 #image_section{
-	background-color: rgb(51, 51, 51);
 	padding-bottom: 30px;
 	padding-top: 30px;
 }

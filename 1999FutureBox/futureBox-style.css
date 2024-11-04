@@ -1,0 +1,208 @@
+html{
+	margin:0;
+	padding:0;
+}
+body::-webkit-scrollbar {
+	width: .7em;
+}
+
+body::-webkit-scrollbar-track {
+	background-color: rgb(151, 129, 151);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: rgb(56, 18, 56);
+}
+
+body{
+	margin:0;
+	padding:0;
+	color: rgb(200, 200, 200);
+	font-family: 'Open Sans', sans-serif;
+	background: linear-gradient(to bottom, #001d2e, #001926);
+	overflow-x: hidden;
+}
+
+div{
+	display: block;
+	margin: 0 auto;
+}
+
+img{
+	vertical-align: middle;
+}
+h1{
+	text-transform: uppercase;
+}
+
+
+#video-player {
+	max-width: 900px;
+	text-align: center;
+	border-radius: 15px;
+	border: 6px solid rgb(56, 18, 56);
+	box-shadow: 10px 10px 20px #000000, -10px -10px 20px #000000, 10px -10px 20px #000000, -10px 10px 20px #000000;
+}
+
+
+#title{
+	background-image: url("imgs/background.png");
+	width: 100%;
+	height: 100%;
+	background-position-x: center;
+	background-size: cover;
+	background-attachment: initial;
+	background-color: rgb(51, 51, 51);
+}
+
+#about{
+	padding-top: 30px;
+	background-image: url("imgs/background_4.png");
+	background-position-x: center;
+	background-position-y: top;
+	background-size: cover;
+	background-attachment: initial;
+	background-color: rgb(51, 51, 51, 0);
+	padding-bottom: 30px;
+}
+
+#project-info{
+	padding-top: 30px;
+	background-image: url("imgs/background.png");
+	background-position-x: center;
+	background-position-y: top;
+	background-size: cover;
+	background-attachment: initial;
+	background-color: rgb(51, 51, 51);
+	padding-bottom: 30px;
+}
+.titles{
+	text-transform: uppercase;
+	padding: 10px;
+	font-family:'Press Start 2P', cursive;
+}
+.box{
+	padding: 20px;
+	box-sizing: border-box;
+	border-radius: 15px;
+	background-color: rgba(63, 63, 63, 0.5);
+	border:5px solid rgb(51, 51, 51);
+}
+
+
+#title{
+	width: 100%;
+	height: 100%;
+	background-position-x: center;
+	background-position-y: top;
+	background-size: cover;
+	background-attachment: initial;
+	background-image: url("imgs/background.png");
+}
+.description{
+	color: rgb(200, 200, 200);
+	margin: 0 auto;
+	width: 900px;
+	min-width: 600px;
+}
+
+#about .description .box{
+	min-height: 200px;
+	border:5px solid rgb(9,236,249);
+	background-color: rgba(13, 30, 40, 0.75);
+}
+
+
+.titles{
+	text-transform: uppercase;
+	padding: 10px;
+	font-family:'Press Start 2P', cursive;
+}
+.box{
+	background-color: rgba(34, 11, 34, 0.5);
+	border:5px solid rgb(56, 0, 94);
+}
+
+hr {
+  border: 0;
+  border-top: 3px double #000000;
+}
+.content{
+	padding: 10px;
+}
+.characters{
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+}
+#image_section{
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+#info-section{
+	color: #09ebf7;
+}
+
+.logos{
+	text-align: center;
+    width: 90%;
+}
+ul{
+	list-style: none;
+}
+
+.titles{
+	text-transform: uppercase;
+	padding: 10px;
+	font-family:'Press Start 2P', cursive;
+}
+
+.content{
+	padding: 10px;
+}
+
+.tz-gallery {
+	padding: 40px;
+}
+
+.tz-gallery .lightbox img {
+	width: 100%;
+	margin-bottom: 30px;
+	transition: 0.2s ease-in-out;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+.tz-gallery {
+	padding: 40px;
+}
+
+.tz-gallery .lightbox img {
+	width: 100%;
+	margin-bottom: 30px;
+	transition: 0.2s ease-in-out;
+	box-shadow: 5px 5px 10px #000000, -5px -5px 10px #000000;
+}
+
+
+.tz-gallery .lightbox img:hover {
+	transform: scale(1.05);
+	box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.tz-gallery img {
+	border-radius: 4px;
+}
+
+.baguetteBox-button {
+	background-color: transparent !important;
+}
+
+
+@media(max-width: 768px) {
+	body {
+		padding: 0;
+	}
+
+	.container.gallery-container {
+		border-radius: 0;
+	}
+}

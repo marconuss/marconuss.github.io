@@ -1,0 +1,192 @@
+html{
+    margin:0;
+    padding:0;
+}
+body::-webkit-scrollbar {
+    width: .7em;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgb(134, 188, 172);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(189, 142, 202);
+}
+body{
+    margin:0;
+    padding:0;
+    color: rgb(200, 200, 200);
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to bottom, #411c11, #d24a24);
+    overflow-x: hidden;
+}
+
+div{
+    display: block;
+    margin: 0 auto;
+}
+
+img{
+    vertical-align: middle;
+}
+h1{
+    text-transform: uppercase;
+}
+
+hr {
+    border: 0;
+    border-top: 3px double #000000;
+}
+
+#video-player {
+    max-width: 900px;
+    text-align: center;
+    border-radius: 15px;
+    border:6px solid rgb(43, 16, 78);
+    box-shadow: 10px 10px 20px #000000, -10px -10px 20px #000000, 10px -10px 20px #000000, -10px 10px 20px #000000;
+}
+
+
+
+#title{
+    background-image: url("imgs/SE_MenuBackground.png");
+    width: 100%;
+    height: 100%;
+    background-position-x: center;
+    background-size: cover;
+    background-attachment: initial;
+    background-color: rgb(51, 51, 51);
+}
+
+#about{
+    padding-top: 30px;
+    background-image: url("imgs/SE_Desert.png");
+    background-position-x: center;
+    background-position-y: top;
+    background-size: cover;
+    background-attachment: initial;
+    background-color: rgb(51, 51, 51, 0);
+    padding-bottom: 30px;
+}
+
+#info3{
+    padding-top: 30px;
+    background-image: url("imgs/SE_UI_Background.png");
+    background-position-x: center;
+    background-position-y: top;
+    background-size: cover;
+    background-attachment: initial;
+    background-color: rgb(51, 51, 51);
+    padding-bottom: 30px;
+}
+.titles{
+    text-transform: uppercase;
+    padding: 10px;
+    font-family:'Press Start 2P', cursive;
+}
+.box{
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: rgba(63, 63, 63, 0.5);
+    border:5px solid rgb(51, 51, 51);
+}
+
+.description{
+    color: rgb(51, 51, 51);
+    margin: 0 auto;
+    max-width: 900px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+
+.description .box{
+    border-color: #706781;
+    background-color: rgba(223, 228, 247, 0.5);
+}
+
+
+.content{
+    padding: 10px;
+}
+.characters{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+}
+#image_section{
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+
+.tile_img{
+    text-align: center;
+    width: 70%;
+}
+
+ul{
+    list-style: none;
+}
+
+
+.titles{
+    text-transform: uppercase;
+    padding: 10px;
+    font-family:'Press Start 2P', cursive;
+}
+
+.content{
+    padding: 10px;
+}
+
+.navbar{
+    background-color: black;
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 10px #000000, -5px -5px 10px #000000;
+}
+
+
+.tz-gallery .lightbox img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.tz-gallery img {
+    border-radius: 4px;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .container.gallery-container {
+        border-radius: 0;
+    }
+}
