@@ -104,6 +104,13 @@ hr {
 	text-align: center;
     width: 90%;
 }
+
+.secondary-logos .row .col img{
+	width: 45px;
+	height: 45px;
+}
+
+
 ul{
 	list-style: none;
 }
@@ -121,7 +128,7 @@ ul{
 	background-color: rgba(0, 0, 0, 0.78);
 	transition:opacity 0.15s ease-in;
 	opacity:0;
-	padding-top:80px;
+	padding-top:30px;
 	color: #efefef;
 	text-shadow:1px 1px 1px rgba(0,0,0,0.15);
 }
