@@ -52,8 +52,12 @@
         <img src="imgs/Oddspark_Logo_SD.png" oncontextmenu="return false;" style=" max-height: 500px; padding: 5rem" alt="">
     </div>
     <div style="text-align: center; padding-bottom: 50px;">
-        <div id="video-player" class="ratio ratio-16x9">
-            <iframe src="https://www.youtube.com/embed/dsM0cgHoKbk?si=4cFgSMJ1lylOGELG" title="YouTube video player" allow="encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 10px"></iframe>
+        <div class="video-wrapper ratio ratio-16x9" data-video-id="gq7ac2ZvH78">
+            <img class="video-thumbnail" src="imgs/Odd_Thumbnail.jpg" alt="Video thumbnail">
+            <div class="video-consent">
+                <p>Click to load video. <br> By doing so, you accept YouTube’s privacy policy.</p>
+                <button>Play Trailer</button>
+            </div>
         </div>
     </div>
 </div>
@@ -135,5 +139,24 @@
         </div>
     </div>
 </section>
+
+<script>
+    document.querySelectorAll('.video-wrapper').forEach(wrapper => {
+        const button = wrapper.querySelector('button');
+        const videoId = wrapper.dataset.videoId;
+
+        button.addEventListener('click', () => {
+            const iframe = document.createElement('iframe');
+            iframe.setAttribute('src', `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1`);
+            iframe.setAttribute('frameborder', '0');
+            iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+            iframe.setAttribute('allowfullscreen', 'true');
+            iframe.style.width = '100%';
+
+            wrapper.innerHTML = ''; // Clear thumbnail and consent UI
+            wrapper.appendChild(iframe);
+        });
+    });
+</script>
 </body>
 </html>
